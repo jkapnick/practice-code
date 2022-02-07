@@ -7,15 +7,13 @@
 haystack = ['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']
 
 
-def findneedle(a):
+def findneedle(haystack):
     count = 0
     for needle in haystack:
         count += 1
-        print(needle, count)
         if needle == 'needle':
             position = count - 1
 
-    print(count)
     return "found the needle at position " + str(position)
 
 print(findneedle(haystack))
