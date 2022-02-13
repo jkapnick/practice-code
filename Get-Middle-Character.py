@@ -2,13 +2,20 @@
 # If the word's length is odd, return the middle character. 
 # If the word's length is even, return the middle 2 characters.
 
-word = "middle"
+word = "testing"
 
 def Get_Middle(word):
-    middle = len(word) / 2
+    length = len(word)
+    if length == 1:
+        middle = 1
+    else:
+        middle = length / 2
+    print(middle)
     remainder = len(word) % 2
+    print(remainder)
     if remainder > 0:
-        return word[round(middle) - 1]
+        middle += .5
+        return word[int(middle) - 1]
     else:
         return word[int(middle) - 1] + word[int(middle)]
 
