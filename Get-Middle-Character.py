@@ -10,9 +10,8 @@ def Get_Middle(word):
         middle = 1
     else:
         middle = length / 2
-    print(middle)
     remainder = len(word) % 2
-    print(remainder)
+    
     if remainder > 0:
         middle += .5
         return word[int(middle) - 1]
